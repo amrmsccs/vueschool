@@ -45,7 +45,7 @@ class UserFactory extends Factory
         ]);
     }
 
-    //get random time zone
+    /** Get random timezone from the available array of values $timeZones */
     protected function getRandomTimeZone()
     {
         return $this->timeZones[array_rand($this->timeZones)];
